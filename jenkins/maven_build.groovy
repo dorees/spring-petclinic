@@ -5,7 +5,6 @@ job("Maven Test") {
 
         maven {
             goals('test')
-            golas('package')
         }
     }
 }
