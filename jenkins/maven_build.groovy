@@ -1,14 +1,10 @@
 job("Maven Test") {
 
     scm {
-        branch("master")
-        remote {
-            name("origin")
-            url("https://github.com/dorees/spring-petclinic.git")
-        }
+        github('dorees/spring-petclinic')
     }
 
     steps {
-        maven('test')
+        maven('verify')
     }
 }
